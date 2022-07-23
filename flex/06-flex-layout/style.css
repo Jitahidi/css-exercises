@@ -25,3 +25,54 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+/* Solution Below*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+button {
+  padding: 10px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  background-color: #eeeeee;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0px;
+  width: 100%; /* Fixes justify-content: space-between not working */
+}
+
+ul.left-links, .right-links {
+  display: flex;
+  list-style-type: none; /* Remove bullets */
+  padding: 5px; 
+  margin: 5px; 
+  gap: 20px;
+}
+
+.header a, .footer a {
+  text-decoration: none;
+  color: grey;
+}
